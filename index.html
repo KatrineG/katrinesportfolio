@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katrine Guldagers Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div id="slider-container" style="opacity: 0;">
+        <div class="slider">
+
+            <!-- Første slide UDEN header -->
+            <div class="slide" style="transform: rotateY(0deg);">
+                <h1 id="typewriter"></h1>
+            </div>
+
+
+            <!-- Anden slide MED header -->
+            <div class="slide" style="transform: rotateY(0deg);">
+                <header class="header">
+                    <nav class="header-nav">
+                        <a href="#" onclick="goToPage(2)">OM MIG</a>
+                        <a href="#" onclick="goToPage(4)">PROJEKTER</a>
+                        <a href="#" onclick="goToPage(22)">KONTAKT</a>
+                    </nav>
+                </header>
+            </div>
+
+            <!-- Tredje slide MED header + billed- og tekst-slider -->
+            <div class="slide" style="transform: rotateY(0deg);">
+                <header class="header">
+                    <nav class="header-nav">
+                        <a href="#" onclick="goToPage(2)">OM MIG</a>
+                        <a href="#" onclick="goToPage(4)">PROJEKTER</a>
+                        <a href="#" onclick="goToPage(22)">KONTAKT</a>
+                    </nav>
+                </header>
+
+                <!-- Billed- og tekst-slider -->
+                <div class="image-text-slider">
+                    <div class="slider-content">
+                        <!-- Billed-slider -->
+                        <div class="image-slider">
+                            <img src="images/portræt.webp" class="slide-image active" alt="portræt billede af mig">
+                            <img src="images/portræt2.webp" class="slide-image"
+                                alt="billede af mig og min niece ude i sneen">
+                        </div>
+
+                        <!-- Tekst-slider -->
+                        <div class="text-slider">
+                            <div class="slide-text active">
+                                <h2>Mit faglige jeg</h2>
+                                <p>
+                                    Jeg elsker at arbejde i krydsfeltet mellem innovation og æstetisk stringens – på den
+                                    ene side rene, funktionelle designs, der giver en intuitiv brugeroplevelse, og på
+                                    den anden side kan jeg ikke lade være med at eksperimentere og drysse lidt
+                                    personlighed og kant udover.<br><br>
+                                    Mit mål er ikke bare at skabe noget pænt – for hvad hjælper det, hvis ingen kan
+                                    finde ud af at bruge det? Jeg kan nørde pixels, farvekoder og UX-mønstre i timevis,
+                                    men tænker altid over, hvordan mine valg faktisk påvirker brugeren. Jeg arbejder
+                                    analytisk og iterativt, hvilket er en pæn måde at sige, at jeg prøver mig frem,
+                                    indtil det sidder lige i skabet.<br><br>
+                                    Ud over det visuelle har jeg en voksende kærlighed til frontend-udvikling. Jeg ser
+                                    programmering som et magisk bindeled mellem idé og virkelighed - der er noget
+                                    særligt ved at knække koden (bogstaveligt talt) efter lidt (eller en del)
+                                    frustrationer.<br><br>
+                                    Jeg søger et arbejdsmiljø, hvor jeg kan vokse både teknisk og menneskeligt – omgivet
+                                    af gode og engagerede mennesker, hvor der er plads til sparring og udvikling. De
+                                    bedste løsninger skabes - ifølge mig - gennem samarbejde og konstruktiv feedback, og
+                                    jeg motiveres af at være en del af et fællesskab, hvor vi løfter idéer sammen – og
+                                    hjælper hinanden, når det hele brænder på.<br><br>
+                                    Når jeg arbejder med et projekt, giver jeg mig fuldt ud – jeg arbejder struktureret,
+                                    men er heller ikke bange for at tænke ud af boksen og trykke lidt på de knapper, man
+                                    normalt ikke må røre.
+                                </p>
+                            </div>
+
+                            <div class="slide-text">
+                                <h2>Mit private jeg</h2>
+                                <p>Jeg er 27 år og bor i Mørke – og ja, det er både et rigtigt sted og en ret præcis
+                                    beskrivelse af, hvor langt ude på landet jeg bor. Selvom jeg elsker at komme ind til
+                                    “storbyen” med liv og muligheder, sætter jeg også pris på at komme hjem til ro,
+                                    natur og en lidt langsommere rytme.<br><br>
+
+                                    Jeg er nok lidt af et sammensat menneske – reflekterende med en lidt krøllet hjerne.
+                                    Folk, der ikke kender mig, opfatter mig måske som lidt reserveret i starten, men når
+                                    man lærer mig at kende, vil man (forhåbentligt) opdage, at jeg både har en skæv
+                                    humor og en måske en lidt anderledes måde at se verden på. Jeg trives bedst i nære
+                                    relationer, hvor der er plads til både dybe samtaler og fjollede øjeblikke.<br><br>
+
+                                    Når jeg interesserer mig for noget og sætter mig et mål, går jeg all-in!
+                                    – også selvom det kræver sved, tårer og en hel sommerferie dedikeret til min
+                                    nemesis: matematik. Jeg har en forkærlighed for detaljer og en fascination af, når
+                                    noget er æstetisk gennemført – hvad enten det er et veldesignet interface, en smuk
+                                    anretning af mad eller den perfekte farvekombination i et outfit.
+                                    Jeg elsker at nørde, hvad end det er visuel æstetik, ny viden eller et helt nyt
+                                    emne, jeg har kastet mig over.<br><br>
+
+                                    Når jeg ikke sidder begravet i design og kode, nyder jeg de lidt klichéprægede, men
+                                    hyggelige ting i livet: male med akvarel, bage kage (selvom det sjældent går godt)
+                                    og gå ture i naturen. Jeg elsker også at bruge tid med min 2-årige bedste ven (min
+                                    niece), og at spille Yatzy, fordi jeg tydeligvis har fundet min indre pensionist
+                                    frem lidt for tidligt.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Navigation prikker -->
+                    <div class="dots">
+                        <span class="dot active" onclick="changeSlide(0)"></span>
+                        <span class="dot" onclick="changeSlide(1)"></span>
+                    </div>
+                    <div class="extra-content">
+                        <p id="extra-typewriter"></p>
+
+                    </div>
+                </div>
+            </div> <!-- 🔹 Lukker tredje slide korrekt -->
+
+            <!-- Fjerde slide MED header -->
+            <div class="slide" style="transform: rotateY(0deg);">
+                <header class="header">
+                    <nav class="header-nav">
+                        <a href="#" onclick="goToPage(2)">OM MIG</a>
+                        <a href="#" onclick="goToPage(4)">PROJEKTER</a>
+                        <a href="#" onclick="goToPage(22)">KONTAKT</a>
+                    </nav>
+                </header>
+            </div>
+
+            <!-- Femte slide MED header -->
+            <div class="slide" style="transform: rotateY(0deg);">
+                <header class="header">
+                    <nav class="header-nav">
+                        <a href="#" onclick="goToPage(2)">OM MIG</a>
+                        <a href="#" onclick="goToPage(4)">PROJEKTER</a>
+                        <a href="#" onclick="goToPage(22)">KONTAKT</a>
+                    </nav>
+                </header>
+
+                <div class="project-wrapper">
+
+                    <!-- Projekt 1 -->
+                    <div class="project-card" id="returnit-card">
+                        <img src="images/returnitkort.webp" alt="Return It">
+                        <div class="card-text">
+                            <p>Digital løsning til en B2B-virksomhed, der leverer bæredygtig emballage til festivaler og
+                                events. Følg processen fra UX og design til kodning og den færdige digitale løsning.</p>
+                            <button type="button" class="project-button" onclick="goToPage(5)">Se projekt</button>
+
+                        </div>
+                    </div>
+
+                    <!-- Projekt 2 -->
+                    <div class="project-card" id="astro-card">
+                        <img src="images/astrokort.webp" alt="Astrologiens Univers">
+                        <div class="card-text">
+                            <p>Et interaktivt storytelling-projekt skabt til Steno Museets udstilling om universet.
+                                Oplevelsen gør udstillingen mere interessant for unge ved at bruge relaterbare, visuelle
+                                og sjove elementer.</p>
+                                <button type="button" class="project-button" onclick="goToPage(12)">Se projekt</button>
+                        </div>
+                    </div>
+
+                    <!-- Projekt 3 -->
+                    <div class="project-card" id="nippon-card">
+                        <img src="images/nipponkort.webp" alt="Nippon">
+                        <div class="card-text">
+                            <p>Design af en hjemmeside til en fiktiv udbyder af japansk-inspirerede måltidskasser med
+                                fokus på UX og visuel identitet. Få et indblik i processen fra idé til færdig digital
+                                løsning.</p>
+                                <button type="button" class="project-button" onclick="goToPage(17)">Se projekt</button>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <!-- sjette slide MED header -->
+            <div class="slide" style="transform: rotateY(0deg);">
+                <header class="header">
+                    <nav class="header-nav">
+                        <a href="#" onclick="goToPage(2)">OM MIG</a>
+                        <a href="#" onclick="goToPage(4)">PROJEKTER</a>
+                        <a href="#" onclick="goToPage(22)">KONTAKT</a>
+                    </nav>
+                </header>
+
+                <p id="video-typewriter-text" class="video-typewriter"></p>
+
+                <div class="video-on-laptop-wrapper">
+                    <video id="desktop-video-returnit" muted playsinline preload="auto">
+                        <source src="videos/returnit_dekstop.mp4" type="video/mp4">
+                    </video>
+
+                </div>
+
+                <!-- Mobil-video -->
+                <div class="video-on-mobile-wrapper">
+                    <video id="mobile-video-returnit" muted playsinline preload="auto">
+                        <source src="videos/returnit_mobile.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="project-info">
+                    <p>Projektvarighed: 4 uger til udvikling af løsning og rapport, efterfulgt af 3 ugers forberedelse
+                        til mundtlig præsentation (inkl. juleferie).</p>
+                    <p>Gruppestørrelse: 2</p><br>
+                    <p>Relevante links:<br>
+                        Figma: <a
+                            href="https://www.figma.com/design/17Mp8g27Sg7KNO3oNuTGii/Untitled?node-id=0-1&p=f&t=TAjcZHOfXgLPqQ4m-0"
+                            target="_blank">Figma-link</a><br>
+                        Miro: <a href="https://miro.com/app/board/uXjVLAIE7RM=/" target="_blank">Miro-link</a><br>
+                    </p><br>
+                    <p>I udviklingen af den digitale løsning for Return It fulgte vi en iterativ designproces baseret på
+                        Double Diamond-modellen, hvor vi arbejdede<br>delvist struktureret med research, idéudvikling,
+                        brugertest og implementering.</p>
+                </div>
+
+            </div>
+
+
+
+            <!-- syvende slide MED header -->
+            <div class="slide" style="transform: rotateY(0deg);">
+                <header class="header">
+                    <nav class="header-nav">
+                        <a href="#" onclick="goToPage(2)">OM MIG</a>
+                        <a href="#" onclick="goToPage(4)">PROJEKTER</a>
+                        <a href="#" onclick="goToPage(22)">KONTAKT</a>
+                    </nav>
+                </header>
+
+            </div>
+
+
+            <!-- ottende slide MED header -->
+            <div class="slide" style="transform: rotateY(0deg);">
+                <header class="header">
+                    <nav class="header-nav">
+                        <a href="#" onclick="goToPage(2)">OM MIG</a>
+                        <a href="#" onclick="goToPage(4)">PROJEKTER</a>
+                        <a href="#" onclick="goToPage(22)">KONTAKT</a>
+                    </nav>
+                </header>
+
+            </div>
+
+            <!-- niende slide MED header -->
+            <div class="slide" style="transform: rotateY(0deg);">
+                <header class="header">
+                    <nav class="header-nav">
+                        <a href="#" onclick="goToPage(2)">OM MIG</a>
+                        <a href="#" onclick="goToPage(4)">PROJEKTER</a>
+                        <a href="#" onclick="goToPage(22)">KONTAKT</a>
+                    </nav>
+                </header>
+
+            </div>
+
+            <!-- tiende slide MED header -->
+            <div class="slide" style="transform: rotateY(0deg);">
+                <header class="header">
+                    <nav class="header-nav">
+                        <a href="#" onclick="goToPage(2)">OM MIG</a>
+                        <a href="#" onclick="goToPage(4)">PROJEKTER</a>
+                        <a href="#" onclick="goToPage(22)">KONTAKT</a>
+                    </nav>
+                </header>
+
+            </div>
+
+            <!-- ellevte slide MED header -->
+            <div class="slide" style="transform: rotateY(0deg);">
+                <header class="header">
+                    <nav class="header-nav">
+                        <a href="#" onclick="goToPage(2)">OM MIG</a>
+                        <a href="#" onclick="goToPage(4)">PROJEKTER</a>
+                        <a href="#" onclick="goToPage(22)">KONTAKT</a>
+                    </nav>
+                </header>
+
+            </div>
+
+            <!-- tolvte slide MED header -->
+            <div class="slide" style="transform: rotateY(0deg);">
+                <header class="header">
+                    <nav class="header-nav">
+                        <a href="#" onclick="goToPage(2)">OM MIG</a>
+                        <a href="#" onclick="goToPage(4)">PROJEKTER</a>
+                        <a href="#" onclick="goToPage(22)">KONTAKT</a>
+                    </nav>
+                </header>
+                <p id="astro-typewriter-text" class="astro-typewriter"></p>
+            </div>
+
+            <!-- trettende slide MED header -->
+            <div class="slide" style="transform: rotateY(0deg);">
+                <header class="header">
+                    <nav class="header-nav">
+                        <a href="#" onclick="goToPage(2)">OM MIG</a>
+                        <a href="#" onclick="goToPage(4)">PROJEKTER</a>
+                        <a href="#" onclick="goToPage(22)">KONTAKT</a>
+                    </nav>
+                </header>
+
+                <p id="astro-hint-typewriter-text" class="astro-hint-typewriter"></p>
+
+                <div class="astro-intro-wrapper">
+                    <video id="astro-intro-video" playsinline preload="auto">
+                        <source src="videos/astro_intro.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <!-- Højre video – interaktiv oplevelse -->
+                <div class="astro-side-wrapper">
+                    <video id="astro-side-video" playsinline preload="auto">
+                        <source src="videos/astro_side.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="project-astro-info">
+                    <p>Relevante links:<br>
+                        Figma: <a
+                            href="https://www.figma.com/design/IDXlVBnd1YT2RP3wkwtGx9/Interactive-Storytelling?node-id=2-3&p=f&t=3JI7pMAcHFkQX5SJ-0"
+                            target="_blank">Figma-link</a><br>
+                        Introduktions video: <a href="https://www.youtube.com/watch?v=UIiwI4sF3z0"
+                            target="_blank">Introduktions video-link</a><br>
+                        Interaktiv løsning: <a href="https://interactive-storytelling.mieholm.com/"
+                            target="_blank">Astrologiens Univers-link</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- fjortende slide MED header -->
+            <div class="slide" style="transform: rotateY(0deg);">
+                <header class="header">
+                    <nav class="header-nav">
+                        <a href="#" onclick="goToPage(2)">OM MIG</a>
+                        <a href="#" onclick="goToPage(4)">PROJEKTER</a>
+                        <a href="#" onclick="goToPage(22)">KONTAKT</a>
+                    </nav>
+                </header>
+
+            </div>
+
+            <!-- femtende slide MED header -->
+            <div class="slide" style="transform: rotateY(0deg);">
+                <header class="header">
+                    <nav class="header-nav">
+                        <a href="#" onclick="goToPage(2)">OM MIG</a>
+                        <a href="#" onclick="goToPage(4)">PROJEKTER</a>
+                        <a href="#" onclick="goToPage(22)">KONTAKT</a>
+                    </nav>
+                </header>
+
+            </div>
+
+            <!-- sekstende slide MED header -->
+            <div class="slide" style="transform: rotateY(0deg);">
+                <header class="header">
+                    <nav class="header-nav">
+                        <a href="#" onclick="goToPage(2)">OM MIG</a>
+                        <a href="#" onclick="goToPage(4)">PROJEKTER</a>
+                        <a href="#" onclick="goToPage(22)">KONTAKT</a>
+                    </nav>
+                </header>
+
+            </div>
+
+            <!-- syttende slide MED header -->
+            <div class="slide" style="transform: rotateY(0deg);">
+                <header class="header">
+                    <nav class="header-nav">
+                        <a href="#" onclick="goToPage(2)">OM MIG</a>
+                        <a href="#" onclick="goToPage(4)">PROJEKTER</a>
+                        <a href="#" onclick="goToPage(22)">KONTAKT</a>
+                    </nav>
+                </header>
+
+            </div>
+
+            <!-- attende slide MED header -->
+            <div class="slide" style="transform: rotateY(0deg);">
+                <header class="header">
+                    <nav class="header-nav">
+                        <a href="#" onclick="goToPage(2)">OM MIG</a>
+                        <a href="#" onclick="goToPage(4)">PROJEKTER</a>
+                        <a href="#" onclick="goToPage(22)">KONTAKT</a>
+                    </nav>
+                </header>
+
+                <p id="nippon-typewriter-text" class="video-typewriter"></p>
+
+                <!-- Video-wrapper -->
+                <div class="nippon-video-wrapper">
+                    <video id="nippon-video" muted playsinline preload="auto">
+                        <source src="videos/nippon video.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+                <!-- Nippon-info SKAL LIGGE HER – efter video-wrapper, men stadig INDE i slide -->
+                <div class="project-nippon-info">
+                    <p>Relevante links:<br>
+                        Figma: <a
+                            href="https://www.figma.com/design/6GQ03XNYEwdMNKwbKceSkn/Moodboards-til-Nippon?node-id=5-4&p=f&t=f1gKHYQhHS3JqcGd-0"
+                            target="_blank">Figma-link</a><br>
+                        Miro: <a
+                            href="https://miro.com/app/board/uXjVKJ_4na4=/?lid=tehjfthb1sj6&utm_source=notification&utm_medium=email&utm_campaign=daily-updates&utm_content=view-board-cta"
+                            target="_blank">Miro-link</a><br>
+                        Digital løsning: <a href="https://nippon.danielfrederiksmose.dk/"
+                            target="_blank">URL-link</a><br>
+                        Github: <a href="https://github.com/KatrineG/Nippon" target="_blank">Github-link</a>
+                    </p><br>
+                    <p>I udviklingen af den digital løsning for Return It fulgte vi en iterativ designproces baseret på
+                        Double Diamond-modellen, hvor vi arbejdede delvist struktureret med research, idéudvikling,
+                        brugertest og implementering.</p>
+                </div>
+            </div>
+
+            <!-- Nittende slide MED header og én samlet billed-slider med 6 billeder -->
+            <div class="slide" style="transform: rotateY(0deg);">
+                <header class="header">
+                    <nav class="header-nav">
+                        <a href="#" onclick="goToPage(2)">OM MIG</a>
+                        <a href="#" onclick="goToPage(4)">PROJEKTER</a>
+                        <a href="#" onclick="goToPage(22)">KONTAKT</a>
+                    </nav>
+                </header>
+                <p id="desk-typewriter-text" class="deskresearch-typewriter"></p>
+
+                <div class="research-slider-wrapper">
+                    <div class="research-slider" id="research-slider">
+                        <img src="images/deskresearch1.png" class="research-image deskresearch1 active" alt="Billede 1">
+                        <img src="images/deskresearch2.webp" class="research-image deskresearch2" alt="Billede 2">
+                        <img src="images/deskresearch3.webp" class="research-image deskresearch3" alt="Billede 3">
+                        <img src="images/deskresearch4.webp" class="research-image deskresearch4" alt="Billede 4">
+                        <img src="images/deskresearch5.webp" class="research-image deskresearch5" alt="Billede 5">
+                        <img src="images/deskresearch6.webp" class="research-image deskresearch6" alt="Billede 6">
+                    </div>
+
+                    <div class="research-dots" id="research-dots">
+                        <span class="research-dot active"
+                            onclick="changeSlide(0, 'research-slider', 'research-dots')"></span>
+                        <span class="research-dot" onclick="changeSlide(1, 'research-slider', 'research-dots')"></span>
+                        <span class="research-dot" onclick="changeSlide(2, 'research-slider', 'research-dots')"></span>
+                        <span class="research-dot" onclick="changeSlide(3, 'research-slider', 'research-dots')"></span>
+                        <span class="research-dot" onclick="changeSlide(4, 'research-slider', 'research-dots')"></span>
+                        <span class="research-dot" onclick="changeSlide(5, 'research-slider', 'research-dots')"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- tyvende slide MED header -->
+            <div class="slide" style="transform: rotateY(0deg);">
+                <header class="header">
+                    <nav class="header-nav">
+                        <a href="#" onclick="goToPage(2)">OM MIG</a>
+                        <a href="#" onclick="goToPage(4)">PROJEKTER</a>
+                        <a href="#" onclick="goToPage(22)">KONTAKT</a>
+                    </nav>
+                </header>
+            </div>
+
+            <!-- enogtyvende slide MED header -->
+            <div class="slide" style="transform: rotateY(0deg);">
+                <header class="header">
+                    <nav class="header-nav">
+                        <a href="#" onclick="goToPage(2)">OM MIG</a>
+                        <a href="#" onclick="goToPage(3)">PROJEKTER</a>
+                        <a href="#" onclick="goToPage(22)">KONTAKT</a>
+                    </nav>
+                </header>
+            </div>
+
+            <!-- toogtyvende slide MED header -->
+            <div class="slide" style="transform: rotateY(0deg);">
+                <header class="header">
+                    <nav class="header-nav">
+                        <a href="#" onclick="goToPage(2)">OM MIG</a>
+                        <a href="#" onclick="goToPage(3)">PROJEKTER</a>
+                        <a href="#" onclick="goToPage(22)">KONTAKT</a>
+                    </nav>
+                </header>
+                <p id="contact-typewriter-text" class="contact-typewriter"></p>
+            </div>
+
+            <!-- treogtyvende slide MED header -->
+            <div class="slide" style="transform: rotateY(0deg);">
+
+            </div>
+
+
+        </div> <!-- 🔹 Lukker slider -->
+
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div> <!-- 🔹 Lukker slider-container -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>

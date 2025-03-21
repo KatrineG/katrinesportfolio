@@ -1,0 +1,682 @@
+.header {
+    position: absolute;
+    top: 15px;
+    left: -25px;
+    width: 100%;
+    padding: 25px 40px;
+    background: transparent;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+.header-nav a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight:200;
+    color: #D76328;
+    transition: color 0.3s ease;
+}
+
+.header-nav a:hover {
+    color: #000000;
+}
+
+/* Skjul headeren, når første slide er aktiv */
+#slider-container:has(.first-slide) + .header {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #f3f3f3;
+    perspective: 2000px;
+}
+
+#slider-container {
+    position: relative;
+    width: 1480px;
+    height: 820px;
+    transform-style: preserve-3d;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.slider {
+    display: flex;
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    transform-origin: left center;
+    filter: drop-shadow(#777 10px 10px 12px);
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    backface-visibility: hidden;
+    transform-origin: left center;
+    transition: transform 1s ease-in-out;
+    filter: drop-shadow(#555 0px 0px 200px);
+}
+
+.slide:nth-child(1) {
+    background-image: url('images/page1.webp');
+    z-index: 23;
+}
+
+.slide:nth-child(2) {
+    background-image: url('images/page2.webp');
+    z-index: 22; 
+}
+
+.slide:nth-child(3) { 
+    background-image: url('images/page3.webp');
+    z-index: 21;
+}
+
+.slide:nth-child(4) { 
+    background-image: url('images/page4.webp');
+    z-index: 20;
+}
+.slide:nth-child(5) {
+    background-image: url('images/page5.webp');
+    z-index: 19;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide:nth-child(6) {
+    background-image: url('images/page6.webp');
+    z-index: 18; 
+}
+
+.slide:nth-child(7) { 
+    background-image: url('images/page7.webp');
+    z-index: 17;
+}
+
+.slide:nth-child(8) { 
+    background-image: url('images/page8.webp');
+    z-index: 16;
+}
+
+.slide:nth-child(9) { 
+    background-image: url('images/page9.webp');
+    z-index: 15;
+}
+
+.slide:nth-child(10) { 
+    background-image: url('images/page10.webp');
+    z-index: 14;
+}
+
+.slide:nth-child(11) { 
+    background-image: url('images/page11.webp');
+    z-index: 13;
+}
+
+.slide:nth-child(12) { 
+    background-image: url('images/page12.webp');
+    z-index: 12;
+}
+
+.slide:nth-child(13) { 
+    background-image: url('images/page13.webp');
+    z-index: 11;
+}
+
+.slide:nth-child(14) { 
+    background-image: url('images/page14.webp');
+    z-index: 10;
+}
+
+.slide:nth-child(15) { 
+    background-image: url('images/page15.webp');
+    z-index: 9;
+}
+
+.slide:nth-child(16) { 
+    background-image: url('images/page16.webp');
+    z-index: 8;
+}
+
+.slide:nth-child(17) { 
+    background-image: url('images/page17.webp');
+    z-index: 7;
+}
+
+.slide:nth-child(18) { 
+    background-image: url('images/page18.webp');
+    z-index: 6;
+}
+
+.slide:nth-child(19) { 
+    background-image: url('images/page19.webp');
+    z-index: 5;
+}
+
+.slide:nth-child(20) { 
+    background-image: url('images/page20.webp');
+    z-index: 4;
+}
+
+.slide:nth-child(21) { 
+    background-image: url('images/page21.webp');
+    z-index: 3;
+}
+
+.slide:nth-child(22) { 
+    background-image: url('images/page22.webp');
+    z-index: 2;
+}
+
+.slide:nth-child(23) { 
+    background-image: url('images/page23.webp');
+    z-index: 1;
+}
+
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    z-index: 100;
+    left: -50px;
+}
+
+.next {
+    z-index: 100;
+    right: -50px;
+}
+
+  #typewriter {
+    position: absolute;
+    top: 29%; /* Ændr denne værdi for at flytte teksten op/ned */
+    left: 13%;
+    font-family: 'Playfair Display', serif;
+    color: #DB6525;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 80px;
+    margin: 0;
+      
+  }
+
+
+.image-text-slider {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 60px;
+}
+
+.slider-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: flex-start;
+    margin-top: 200px;
+}
+
+.image-slider {
+    width: 400px; /* Justér efter behov */
+    height: 550px; /* Justér efter behov */
+    position: relative;
+    overflow: hidden; /* Sikrer at billederne ikke overskrider rammen */
+}
+
+.slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.7s ease-in-out; /* Fade-effekt */
+    pointer-events: none; /* Så kun det aktive billede reagerer */
+}
+
+.slide-image.active {
+    opacity: 1;
+}
+
+.text-slider {
+    width: 435px;
+}
+.slide-text h2 {
+    margin-bottom: 10px; /* Justér værdien for mere/mindre afstand */
+    font-family: 'Playfair Display', serif;
+    font-weight:600; 
+    font-size: 20px;
+}
+
+.slide-text {
+    font-family: 'Lora', serif;
+    font-weight:500;
+    display: none;
+    font-size: 14px;
+    color: #000000;
+    line-height: 18px;
+}
+
+
+.slide-text.active {
+    display: block; /* Viser kun den aktive tekst */
+}
+
+.dots {
+    margin-top: 15px;
+    display: flex;
+   justify-content: center;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    margin: 5px;
+    background-color: #D76328;
+    opacity: 0.5;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #D76328;
+    opacity: 1;
+}
+
+.extra-content {
+    font-size: 14px;
+    font-family: 'Lora', serif;
+    font-weight:570;
+    width: 200px;
+    color: #D76328; /* Match farven fra designet */
+    font-size: 15px; /* Justér størrelsen */
+    margin-left: 1185px;
+    margin-top: -200px;
+}
+
+.project-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-top: 120px;;
+    
+  }
+  
+  .project-card {
+    width: 350px;
+    text-align: center;
+    font-family: 'Lora', serif;
+    color: #000000;
+ 
+  }
+  
+  .project-card img {
+    width: 80%;
+    height: auto;
+
+  }
+  
+  .project-card p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    font-family: 'Lora', serif;
+    font-weight: 500;
+  }
+  
+  .project-button {
+    position: static;
+    transform: none;
+    background-color: #D76328;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Lora', serif;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: auto;
+    display: inline-block; 
+    width: fit-content;    
+    align-self: center;    
+  }
+  
+  .project-button:hover {
+    background-color: #000000;
+  }
+  .card-text {
+    display: flex;                   
+    flex-direction: column;         
+  }
+
+  .project-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  .project-card.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  #returnit-card.fade-in {
+    transition-delay: 0.3s;
+  }
+  #astro-card.fade-in {
+    transition-delay: 0.6s;
+  }
+  #nippon-card.fade-in {
+    transition-delay: 0.9s;
+  }
+
+  .video-on-laptop-wrapper {
+    position: absolute;
+    top: 384px;    /* Justér efter hvor laptopskærmen starter */
+    left: 126px;   /* Justér efter hvor skærmen starter i bredden */
+    width: 450px;  /* Tilpas så det matcher skærmens bredde */
+    z-index: 10;
+  }
+  
+  #desktop-video-returnit {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px; /* valgfrit, hvis laptop har afrundede hjørner */
+  }
+  
+  .video-on-mobile-wrapper {
+    position: absolute;
+    top: 403px;    /* Justér disse værdier */
+    left: 670px;   /* Justér så det passer med mobilskærmens placering */
+    width: 140px;  /* Bredde på mobilen */
+    height: 282px; /* Højde på mobilen */
+    z-index: 10;
+  }
+  
+  #mobile-video-returnit {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0px 0px 20px 20px;
+    object-position: top; /* 👈 VIGTIG: hold toppen synlig */
+    
+  }
+
+  .project-info {
+    position: absolute;
+    top: 350px; /* justér efter behov */
+    left: 880px;
+    width: 560px;
+    max-width: 560px;
+    font-family: 'Lora', serif;
+    font-size: 14px;
+    font-weight: 200;
+    color: #000;
+    padding: 20px;
+  }
+  
+  .project-info a {
+    color: #D76328;
+    text-decoration: underline;
+  }
+
+  .video-typewriter {
+    position: absolute;
+    top: 350px;
+    left: 170px;
+    font-family: 'Lora', serif;
+    color: #D76328;
+    font-size: 14px;
+    font-weight:570;
+  }
+
+  /* Typewriter-tekst til slide 12 */
+.astro-typewriter {
+    font-family: 'Lora', serif;
+    font-size: 14px;
+    font-weight:570;
+    color: #D76328;
+    margin-left: 1150px; /* justér placering vandret */
+    margin-top: 720px;   /* justér placering lodret */
+    width: 250px;;
+}
+
+/* Venstre video */
+.astro-intro-wrapper {
+    position: absolute;
+    top: 448px; /* justér som du vil */
+    left: 119px; /* dette gælder KUN for intro-videoen nu */
+    width: 355px;
+    height: 250px;
+    z-index: 10;
+}
+
+.astro-intro-wrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Højre video */
+.astro-side-wrapper {
+    position: absolute;
+    top: 448px; /* du kan justere denne uafhængigt */
+    left: 593px; /* nu har denne sin egen position */
+    width: 355px;
+    height: 250px;
+    z-index: 10;
+}
+
+.astro-side-wrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Typewriter-stil til slide 12 - hinttekst før videoer */
+.astro-hint-typewriter {
+    position: absolute;
+    top: 725px; /* justér denne efter hvor du vil have teksten */
+    left: 112px;
+    font-family: 'Lora', serif;
+    font-size: 14px;
+    font-weight:570;
+    color: #D76328;
+}
+
+.project-astro-info {
+    position: absolute;
+    top: 490px; /* justér efter behov */
+    left: 1057px;
+    width: 560px;
+    max-width: 560px;
+    font-family: 'Lora', serif;
+    font-size: 14px;
+    font-weight: 200;
+    color: #000;
+    
+  }
+  
+  .project-astro-info a {
+    color: #D76328;
+    text-decoration: underline;
+  }
+
+  .nippon-video-wrapper {
+    position: absolute;
+    top: 387px;    /* Justér efter hvor laptopskærmen starter */
+    left: 254px;   /* Justér efter hvor skærmen starter i bredden */
+    width: 450px;  /* Tilpas så det matcher skærmens bredde */
+    z-index: 10;
+  }
+  
+  #nippon-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px; /* valgfrit, hvis laptop har afrundede hjørner */
+  }
+
+  #nippon-typewriter-text {
+    position: absolute;
+    top: 720px; /* Tilpas evt. højden */
+    left: 300px; /* Tilpas placering, så det matcher videoens placering */
+    font-family: 'Lora', serif;
+    color: #D76328;
+    font-size: 14px;
+    font-weight: 570;
+  }
+
+  .project-nippon-info {
+    position: absolute;
+    top: 435px; /* justér efter behov */
+    left: 760px;
+    width: 560px;
+    max-width: 560px;
+    font-family: 'Lora', serif;
+    font-size: 14px;
+    font-weight: 200;
+    color: #000;
+    
+  }
+
+  .project-nippon-info a {
+    color: #D76328;
+  }
+
+  .research-slider-wrapper {
+    position: absolute;
+    bottom: 70px;
+    right: 70px;
+    text-align: right;
+  }
+  
+  .research-slider {
+    position: relative;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+  }
+  
+  .research-image {
+    display: none;
+    object-fit: contain;
+
+  }
+  
+  .research-image.active {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Individuelle størrelser */
+  .deskresearch1 {
+    width: 480px;
+  }
+  
+  .deskresearch2 {
+    width: 500px;
+  }
+  
+  .deskresearch3 {
+    width: 500px;
+  }
+  
+  .deskresearch4 {
+    width: 680px;
+  }
+  
+  .deskresearch5 {
+    width: 620px;
+  }
+  
+  .deskresearch6 {
+    width: 580px;
+  }
+  
+  .research-dots {
+    margin-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .research-dot {
+    height: 12px;
+    width: 12px;
+    background-color: #D76328;
+    opacity: 0.5;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .research-dot.active {
+    background-color: #D76328;
+    opacity: 1;
+  }
+  
+  .deskresearch-typewriter {
+    position: absolute;
+    top: 735px; /* Justér placering lodret efter behov */
+    left: 930px;   /* Justér placering vandret efter behov */
+    font-family: 'Lora', serif;
+    font-size: 14px;
+    font-weight: 570;
+    color: #D76328;
+    
+  }
+
+  .contact-typewriter {
+    position: absolute;
+    top: 730px;
+    left: 1200px;
+    font-family: 'Lora', serif;
+    color: #D76328;
+    font-size: 14px;
+    font-weight:570;
+    width: 210px;
+  }
